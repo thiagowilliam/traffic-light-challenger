@@ -1,0 +1,48 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.sinalizacao {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.sinalizacao_luz {
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  transition: all 0.2s;
+  opacity: 0.2;
+  border: 2px solid transparent;
+}
+
+.sinalizacao_luz--ligado {
+  opacity: 1;
+  border: 2px solid #fff;
+}
+
+.light-button {
+  appearance: none;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.light-button:not(:disabled) {
+  cursor: pointer;
+}
